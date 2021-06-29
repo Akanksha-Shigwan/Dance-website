@@ -1,0 +1,48 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css 
+
+block content 
+
+    section#introSection
+        div welcome to Akshu Dance classes
+        div.small Live for Dance
+
+    section#missionSection 
+        h2 Our Mission
+        div.card
+            h3 Perfect Moves
+            div.card-box
+                div.card-img
+                    img(src="/static/img/move2.jpg", alt="")
+
+                .card-content 
+                    p HIP HOP
+        div.card
+            h3 all types of Dance forms
+            div.card-box
+                div.card-img
+                    img(src="/static/img/move.jpg", alt="")
+
+                .card-content 
+                    p WESTERN
+        div.card
+            h3 to make world dance like peacock
+            div.card-box
+                div.card-img
+                    img(src="/static/img/move3.jpg", alt="")
+
+                .card-content 
+                    p CLASSIC
+
+    section#sponsorsSection 
+        h2 Section for Sponsors
+        div#sponsors
+            img(src="/static/img/sponsor.jpg", alt="Sponsor img" class="spImage")
+            img(src="/static/img/sponsor1.jpg", alt="Sponsor img" class="spImage")
+            img(src="/static/img/sponsor2.jpg", alt="Sponsor img" class="spImage")

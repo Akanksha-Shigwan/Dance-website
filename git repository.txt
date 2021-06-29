@@ -1,0 +1,16 @@
+$ git config --global user.name "Akshu"
+$ git config --global user.email "akshushigwan2000@gmail.com"
+$ touch .gitignore // create the text file , add node_module/ in the file and save
+$ git init
+$ git add .
+$ git commit -m "Initial commit" // shows all the file in folder
+$ git status // (working tree clean) if this msg arrived then it is clear to proceed further
+// in github website copy the SSH link
+$ git remote add origin (paste the link here)
+$ git push origin master
+// Generate the SSH link copied from google
+$ ssh-keygen -t ed25519 -C "akshushigwan2000@gmail.com"
+// data get from the above line, copy the public key from that 
+$ cat (paste the copied link here)
+//copy the entire code get from it and paste in the github site
+$ git push origin master //if get done msg than it is done
